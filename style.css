@@ -265,6 +265,7 @@ td {
 	#section_principal {
 		display: flex;
 		flex-direction: column;
+  padding-bottom: 30px;
 	}
 
 	.section1 {
