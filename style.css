@@ -89,24 +89,6 @@ p {
 }
 
 
-/* -----Les Séparateurs----- */
-
-.separateur {
-	clear: both;
-	height: 5px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color: #41D1CC;
-}
-
-.separateur_vertical {
-	width: 3px;
-	height: auto;
-	margin-top: 5px;
-	background-color: grey;
-}
-
-
 /* -----Les Sections----- */
 
 #section_principal {
@@ -138,7 +120,7 @@ p {
 }
 
 
-/* -----Dimensions des Bloc de la Section 1----- */
+/* -----Dimensions des Blocs de la Section 1----- */
 
 .profil {
 	flex: 1;
