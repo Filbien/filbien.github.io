@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('polices/OpenSans-Regular-webfont.eot');
+    src: url('polices/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('polices/OpenSans-Regular-webfont.woff') format('woff'),
+         url('polices/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('polices/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Dayroom';
+	src: url('polices/dayroom.eot');
+	src: url('polices/dayroom.eot?#iefix') format('embedded-opentype'), 
+	url('polices/dayroom.woff') format('woff'),
+	url('polices/dayroom.ttf') format('truetype'),
+	url('polices/dayroom.svg#Dayroom') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'open_sansregular', Calibri, 'Trebuchet MS', sans-serif;
+	background-image: url(images/arriere_plan.jpg);
+	background-size: cover;
+	width: 75%;
+	margin: auto;
+}
+
+header {
+	height: 145px;
+	padding-bottom: 15px;
+}
+
+header img {
+	margin: 5px 50px 0 10px;
+	float: left;
+	border-radius: 5px;
+	background-color: black;
+	box-shadow: 5px 5px 5px black;
+}
+
+
+/* -----Les Titres et autres-----*/
+
+h1 {
+	font-family: Dayroom, Calibri, sans-serif;
+	color: #41D1CC;
+	font-size: 3.5em;
+	text-align: left;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+h2 {
+	font-family: Trebuchet, Calibri, sans-serif;
+	color: #3E6D89;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 0;
+	text-align: left;
+}
+
+h3 {
+	font-family: open_sansregular, Calibri, sans-serif;
+	text-align: left;
+	font-weight: bold;
+	font-style: 1.2em;
+}
+
+h4 {
+	margin-bottom: 10px;
+	font-style: normal;
+	font-weight: bold;
+	color: black;
+	font-size: medium;
+}
+
+h5 {
+	margin-top: 0;
+	color: #41D1CC;
+	font-weight: normal;
+	font-size: medium;
+}
+p {
+	text-align: justify;
+}
+
+
+/* -----Les Séparateurs----- */
+
+.separateur {
+	clear: both;
+	height: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #41D1CC;
+}
+
+.separateur_vertical {
+	width: 3px;
+	height: auto;
+	margin-top: 5px;
+	background-color: grey;
+}
+
+
+/* -----Les Sections----- */
+
+#section_principal {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+.section1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 30%;
+	margin-top: 5px;
+	padding: 10px 20px 0 20px;
+	background-color: #d5d5d5;
+	border: solid black 1px
+}
+
+.section2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 70%;
+	padding: 10px 20px 0 20px;
+	margin-top: 5px;
+	border: solid black 1px;
+}
+
+
+/* -----Dimensions des Bloc de la Section 1----- */
+
+.profil {
+	flex: 1;
+}
+
+.contact {
+	flex: 1.5;
+}
+
+.competences {
+	flex: 1.5;
+}
+
+.langues {
+	flex: 1;
+}
+
+
+/* -----Effets Dynamiques Lien----- */
+
+.contact a {
+	color: black;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.contact a:hover {
+	font-style: italic;
+	color: #41D1CC;
+	text-decoration: none;
+}
+
+.contact a:active {
+	color: #41D1CC;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.contact a:visited {
+	font-style: italic;
+	text-decoration: underline;
+	color: #41D1CC;
+}
+
+
+
+/* -----Puces Contact----- */
+
+.mail {
+	margin: 5px;
+	list-style-image: url('images/ico_mail.png');
+}
+.mobile {
+	margin: 5px;
+	list-style-image: url('images/ico_mobile.png');
+
+}
+.adresse {	
+	margin: 5px;
+	padding-bottom: 10px;
+	list-style-image: url('images/ico_adresse.png');
+}
+
+
+/* -----tableau  Compétences et Langues-----*/
+
+td {
+	padding-right: 10px;
+	padding-left: 5px;
+}
+
+#bordure_1 {
+	border-radius: 5px;
+	background-color: #41D1CC;
+	width: 50px;
+	height: 10px;
+}
+
+#bordure_2 {
+	border-radius: 5px;
+	background-color: #41D1CC;
+	width: 75px;
+	height: 10px;
+}
+
+#bordure_3 {
+	border-radius: 5px;
+	background-color: #41D1CC;
+	width: 100px;
+	height: 10px;
+
+}
+
+#bordure_5 {
+	border-radius: 5px;
+	background-color: #41D1CC;
+	width: 150px;
+	height: 10px;
+}
+
+
+/* -----Formations - les lieux----- */
+
+#lieu {
+	display: inline;
+	color: grey;
+	font-style: italic;
+}
+
+
+/* -----Centre d'Interets----- */
+
+#loisirs li {
+	font-weight: bold;
+}
+
+#interets {
+	display: inline;
+	font-weight: normal;
+}
+
+
+/* -----@queris----- */
+
+@media screen and (max-width: 850px) {
+
+	header {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
+	header img {
+		display: none;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	#section_principal {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section1 {
+		width: auto;
+		padding: 20px;
+	}
+
+	.contact {
+		overflow-x: hidden;
+	}
+
+	.section2 {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+}
+
+@media all and (min-width: 850px) and (max-width: 1150px) {
+
+
+	.section1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.profil {
+		flex: 0.5;
+	}
+	.contact {
+		flex: 1;
+	}
+
+	.competences {
+		overflow-x: scroll;
+		flex: 1;
+	}
+
+	.langues {
+		overflow-x: scroll;
+		flex: 0.5;
+		margin-bottom: 30px;
+	}
+}
+
