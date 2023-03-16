@@ -84,7 +84,7 @@ h5 {
 	font-weight: normal;
 	font-size: medium;
 }
-p {
+.profil p {
 	text-align: justify;
 }
 
@@ -98,18 +98,17 @@ p {
 	padding-top: 20px;
 }
 
-.section1 {
+#section1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 30%;
 	margin-top: 5px;
 	padding: 10px 20px 0 20px;
-	background-color: #d5d5d5;
 	border: solid black 1px
 }
 
-.section2 {
+#section2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -120,7 +119,7 @@ p {
 }
 
 
-/* -----Dimensions des Blocs de la Section 1----- */
+/* -----Dimensions des Blocs de la SECTION 1----- */
 
 .profil {
 	flex: 1;
@@ -139,36 +138,29 @@ p {
 }
 
 
-/* -----Effets Dynamiques Lien----- */
+/* -----Effets Dynamiques des Liens----- */
 
-.contact a {
+a {
 	color: black;
 	font-style: normal;
 	text-decoration: underline;
 }
 
-.contact a:hover {
+a:hover {
 	font-style: italic;
 	color: #41D1CC;
 	text-decoration: none;
 }
 
-.contact a:active {
+a:active {
 	color: #41D1CC;
 	font-style: normal;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.contact a:visited {
-	font-style: italic;
-	text-decoration: underline;
-	color: #41D1CC;
-}
 
-
-
-/* -----Puces Contact----- */
+/* -----Puces de Contact----- */
 
 .mail {
 	margin: 5px;
@@ -177,8 +169,8 @@ p {
 .mobile {
 	margin: 5px;
 	list-style-image: url('images/ico_mobile.png');
-
 }
+
 .adresse {	
 	margin: 5px;
 	padding-bottom: 10px;
@@ -190,7 +182,6 @@ p {
 
 td {
 	padding-right: 10px;
-	padding-left: 5px;
 }
 
 #bordure_1 {
@@ -223,24 +214,23 @@ td {
 }
 
 
-/* -----Formations - les lieux----- */
+/* -----Formations ----- */
 
-#lieu {
-	display: inline;
+em {
 	color: grey;
 	font-style: italic;
 }
 
-
 /* -----Centre d'Interets----- */
 
-#loisirs li {
+.loisirs li {
 	font-weight: bold;
 }
 
-#interets {
-	display: inline;
+.loisirs em {
 	font-weight: normal;
+	color: black;
+	font-style: normal;
 }
 
 
@@ -265,10 +255,9 @@ td {
 	#section_principal {
 		display: flex;
 		flex-direction: column;
-  padding-bottom: 30px;
 	}
 
-	.section1 {
+	#section1 {
 		width: auto;
 		padding: 20px;
 	}
@@ -277,7 +266,7 @@ td {
 		overflow-x: hidden;
 	}
 
-	.section2 {
+	#section2 {
 		display: flex;
 		flex-direction: column;
 		width: auto;
@@ -287,7 +276,7 @@ td {
 @media all and (min-width: 850px) and (max-width: 1150px) {
 
 
-	.section1 {
+	#section1 {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
